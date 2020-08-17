@@ -1,0 +1,33 @@
+body {
+  cursor: url("/images/mouse.cur"), auto;
+}
+.sidebar {
+  left: -10rem;
+  width: 10rem;
+}
+.sidebar.on {
+  left: 0;
+}
+.content.on {
+  margin-left: 0 !important;
+}
+.navbar-toggle {
+  left: 11.5rem;
+}
+.search-form-wrap {
+  right: 10rem;
+}
+@media (min-width: 768px) {
+  .outer,
+  .wrap {
+    width: 100rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .tocbot {
+    display: none !important;
+  }
+  .content.on {
+    transform: translateX(10rem);
+  }
+}
